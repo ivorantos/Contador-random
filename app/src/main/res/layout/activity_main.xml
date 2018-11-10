@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/reset"
         android:layout_width="81dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
@@ -17,19 +17,22 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="40dp"
         android:text="reset"
+        android:onClick="reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="14dp"
-        android:text="Hello World!"
-        tools:layout_editor_absoluteX="154dp" />
+        android:id="@+id/contador"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="160dp"
+        android:text="Pulsaciones"
+        app:layout_constraintBottom_toTopOf="@+id/plus"
+        tools:layout_editor_absoluteX="135dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/plus"
         android:layout_width="81dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
@@ -38,20 +41,22 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="inc"
         android:text="+1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/decrement"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/decrement"
         android:layout_width="81dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="68dp"
         android:layout_marginRight="68dp"
         android:layout_marginBottom="8dp"
+        android:onClick="dec"
         android:text="-1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
